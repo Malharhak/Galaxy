@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void processMove () {
-		float zAxis = -Input.GetAxis ("Vertical");
+		float zAxis = Input.GetAxis ("Vertical");
 		float xAxis = Input.GetAxis ("Horizontal");
 
 		moveSpeed += (Mathf.Abs (xAxis) + Mathf.Abs (zAxis) ) * moveAcceleration * Time.deltaTime;
